@@ -3,7 +3,7 @@ import gym
 from mpo import MPO
 
 gym.logger.set_level(40)
-
+# 总结：理论很漂亮，但是感觉没什么太大的用处，垃圾
 
 def main():
     parser = argparse.ArgumentParser(
@@ -53,7 +53,7 @@ def main():
                         help='number of episodes to evaluate')
     parser.add_argument('--evaluate_episode_maxstep', type=int, default=300,
                         help='maximum evaluate steps of an episode')
-    parser.add_argument('--log_dir', type=str, default=None,
+    parser.add_argument('--log_dir', type=str, default="\log",
                         help='log directory')
     parser.add_argument('--render', action='store_true')
     parser.add_argument('--load', type=str, default=None,
